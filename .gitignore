@@ -168,3 +168,6 @@ cython_debug/
 
 # All files in the backup folder
 backup/
+
+# All files in poetry virtual environment
+.venv/
