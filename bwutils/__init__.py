@@ -15,4 +15,9 @@ try:
 except importlib.metadata.PackageNotFoundError:
     brightway_version = "Not installed"
 
+if brightway_version != "Not installed" and not brightway_version.startswith("2.4"):
+    print(
+        f"Warning: bwutils is designed for Brightway2 version 2.4.x. "
+        f"Detected version {brightway_version}. You may experience compatibility issues."
+    )
 __brightway_version__ = brightway_version
