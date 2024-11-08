@@ -37,7 +37,7 @@ def result_folders(folder_path, result_direcs):
             print(f"Subfolder already exists at: {os.path.abspath(sub_folder_path)}")
 
 
-def single_select_dropdown(names):
+def single_dropdown(names):
     """Creates a single-selection dropdown widget for users to select an option.
 
     Args:
@@ -74,7 +74,7 @@ def single_select_dropdown(names):
     return selected_value
 
 
-def multi_select_dropdown(names):
+def multi_dropdown(names):
     """Creates a multi-selection dropdown widget for users to select multiple options.
 
     Args:
